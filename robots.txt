@@ -4,4 +4,4 @@ Allow: /
 # Block admin panel from being indexed
 Disallow: /#admin
 
-Sitemap: https://aliedits.netlify.app/sitemap.xml
+Sitemap: https://aliedit.netlify.app/sitemap.xml
