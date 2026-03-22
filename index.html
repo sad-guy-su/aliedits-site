@@ -572,8 +572,57 @@ footer{background:var(--ink);border-top:1px solid var(--edge);padding:44px 64px;
 .db-dot.error{background:var(--red)}
 
 /* Responsive */
-@media(max-width:1100px){.hero{grid-template-columns:1fr}.hero-right-card{display:none}.svc-grid{grid-template-columns:1fr}.problem-grid{grid-template-columns:1fr}.prob-left{border-right:none;border-bottom:1px solid var(--edge)}.prc-steps{grid-template-columns:1fr 1fr}.prc-steps::before{display:none}.pr-grid{grid-template-columns:1fr}.te-grid{grid-template-columns:1fr}.svc-header{grid-template-columns:1fr}.svc-grid{grid-template-columns:1fr 1fr}}
-@media(max-width:768px){nav{padding:0 24px}.nav-r{display:none}.sec{padding:80px 24px}.hero{padding:0 24px}.f2{grid-template-columns:1fr}.svc-grid{grid-template-columns:1fr}.prc-steps{grid-template-columns:1fr}.pr-grid{grid-template-columns:1fr}.te-grid{grid-template-columns:1fr}footer{padding:32px 24px;flex-direction:column;text-align:center}.final-cta{padding:80px 24px}.modal-inner{padding:32px 24px}.adm-stats{grid-template-columns:1fr 1fr}.ord-detail{width:100%}.adm-search{width:100%}}
+@media(max-width:1100px){
+  .hero{grid-template-columns:1fr;padding:0 48px}
+  .hero-right-card{display:none}
+  .svc-grid{grid-template-columns:1fr}
+  .problem-grid{grid-template-columns:1fr}
+  .prob-left{border-right:none;border-bottom:1px solid var(--edge)}
+  .prc-steps{grid-template-columns:1fr 1fr}
+  .prc-steps::before{display:none}
+  .pr-grid{grid-template-columns:1fr}
+  .te-grid{grid-template-columns:1fr}
+  .svc-header{grid-template-columns:1fr}
+  .svc-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:768px){
+  nav{padding:0 20px}
+  .nav-r{display:none}
+  .sec{padding:72px 20px}
+  .hero{
+    padding:80px 20px 60px;
+    grid-template-columns:1fr;
+    min-height:auto;
+    padding-top:100px;
+  }
+  .hero-left{padding-top:0}
+  .hero-right-card{display:none}
+  .hero h1{font-size:clamp(44px,12vw,72px);letter-spacing:-1px}
+  .hero-sub{font-size:15px}
+  .scroll-hint{display:none}
+  .f2{grid-template-columns:1fr}
+  .svc-grid{grid-template-columns:1fr}
+  .svc-header{grid-template-columns:1fr;gap:20px}
+  .svc-header .rv-r{display:none}
+  .prc-steps{grid-template-columns:1fr}
+  .pr-grid{grid-template-columns:1fr}
+  .te-grid{grid-template-columns:1fr}
+  footer{padding:32px 20px;flex-direction:column;text-align:center}
+  .final-cta{padding:80px 20px}
+  .modal-inner{padding:28px 20px}
+  .adm-stats{grid-template-columns:1fr 1fr}
+  .ord-detail{width:100%}
+  .adm-search{width:100%}
+  .adm-nav{padding:0 16px;flex-wrap:wrap;height:auto;gap:8px;padding-top:10px;padding-bottom:10px}
+  .adm-nav-r{flex-wrap:wrap;gap:6px}
+  .adm-body{padding:16px}
+  .problem-grid{grid-template-columns:1fr}
+  .prob-left{border-right:none;border-bottom:1px solid var(--edge)}
+  .port-header{grid-template-columns:1fr;gap:20px}
+  .hero-social{flex-wrap:wrap;gap:12px}
+  .hero-ctas{flex-direction:column}
+  .hero-ctas .btn-red,.hero-ctas .btn-ghost{width:100%;justify-content:center}
+}
 </style>
 </head>
 <body>
