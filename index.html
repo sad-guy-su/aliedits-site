@@ -881,8 +881,11 @@ footer{background:var(--ink);border-top:1px solid var(--edge);padding:44px 64px;
    Keys are split and encoded to prevent
    casual scraping from source view.
 ══════════════════════════════════════════ */
-const _a=['aHR0cHM6Ly9sb252eXdxdmNva2pzZWphY21zby5zdXBhYmFzZS5jbw=='].map(x=>atob(x))[0];
-const _b=['ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKemRYQmhZbUZ6WlNJc0luSmxaaUk2SW14dmJuWjVkM0YyWTI5cmFuTmxhbUZqYlhOdklpd2ljbTlzWlNJNkltRnViMjhpTENKcFlYUWlPakUzTnpNMU9EQTJPVGtzSW1WNGNDSTZNakE0T1RFMU5qWTVPWDAuSkVZd2xwYzlxdVRVakpQU2x2Tm1uX0xDSVpTcUNKZ3FWMV9KX09tTHNPRmM='].map(x=>atob(x))[0];
+/* ══════════════════════════════════════════
+   SUPABASE INIT
+══════════════════════════════════════════ */
+const _a=atob('aHR0cHM6Ly9sb252eXdxdmNva2pzZWphY21zby5zdXBhYmFzZS5jbw==');
+const _b=atob('ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKemRYQmhZbUZ6WlNJc0luSmxaaUk2SW14dmJuWjVkM0YyWTI5cmFuTmxhbUZqYlhOdklpd2ljbTlzWlNJNkltRnViMjRpTENKcFlYUWlPakUzTnpNMU9EQTJPVGtzSW1WNGNDSTZNakE0T1RFMU5qWTVPWDAuSkVZd2xwYzlxdVRVakpQU2x2Tm1uX0xDSVpTcWNKZ3FWMUpfT21Mc09GYw==');
 const sb=supabase.createClient(_a,_b);
 
 /* ══════════════════════════════════════════
